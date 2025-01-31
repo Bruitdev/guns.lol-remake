@@ -12,13 +12,12 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('https://fortnitechetz.vercel.app/api/image.py?quality=lossless') no-repeat center center/cover;
+            background: url('https://www.pcgameshardware.de/screenshots/1280x/2018/05/fortnite-battle-royale-blitzschnell_6026334-pc-games.jpg') no-repeat center center/cover;
             font-family: Arial, sans-serif;
             color: white;
         }
         .container {
-            width: 30cm;
-            height: 30cm;
+            width: 20cm;
             background: rgba(0, 0, 0, 0.7);
             border-radius: 15px;
             display: flex;
@@ -27,10 +26,18 @@
             justify-content: center;
             text-align: center;
             padding: 20px;
+            max-width: 60%;
+            position: relative;
         }
         h1 {
             margin: 0;
             font-size: 2em;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            margin-top: 15px;
         }
         p {
             margin: 10px 0;
@@ -41,31 +48,38 @@
             gap: 10px;
             margin-top: 20px;
         }
+        .buttons a {
+            display: inline-block;
+        }
         .buttons img {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 47px;
             cursor: pointer;
             border-radius: 10px;
         }
         .visitor-count {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
             font-size: 1em;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>lxser</h1>
+        <img src="https://fortnitechetz.vercel.app/api/image.py?quality=lossless" alt="error" class="profile-image">
         <p>Be Straight, Believe in God, Never give up!</p>
         <div class="buttons">
-            <img src="button1.jpg" alt="Button 1">
-            <img src="button2.jpg" alt="Button 2">
-            <img src="button3.jpg" alt="Button 3">
+            <a href="https://discord.gg/hoku" target="_blank"><img src="https://www.pngkey.com/png/full/20-200938_white-discord-logo-png-png-free-discord-logo.png" alt="dascoird"></a>
+            <a href="https://tiktok.com/b.r.u.i.t" target="_blank"><img src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-white-symbol-glyph-png.png" alt="Tait Tok"></a>
+            <a href="https://paypal.me/4adm1in" target="_blank"><img src="https://www.edigitalagency.com.au/wp-content/uploads/PayPal-icon-white-png-vertical.png" alt="PayPal"></a>
         </div>
+        <div class="visitor-count">Besucher: <span id="counter">0</span></div>
     </div>
-    <div class="visitor-count">Besucher: <span id="counter">0</span></div>
     
     <script>
         // Besucherzähler (Einfacher lokaler Speicher)
